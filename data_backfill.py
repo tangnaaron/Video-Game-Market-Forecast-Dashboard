@@ -1,38 +1,59 @@
 from igdb.wrapper import IGDBWrapper
 import pandas as pd
 import warnings
+import time
 
 # Disables FutureWarning
 warnings.simplefilter(action = 'ignore', category = FutureWarning)
 
 # Environnment variables 
 client_id = 'w7r7cmzkm0etx41ula5aq00oatzc4c'
-token = 'k2kdmgkw64nyj5y3z2kaxh0esvy6pb'
+token = 'q3ax0dsj0s3565jvyikqu7kfx90elr'
+
+request_batch_size = 10
 
 # Get company's published games 
-def get_games(company):
+def get_games_df(company):
     wrapper = IGDBWrapper(client_id, token)
-
+    
+    games_df = pd.DataFrame()
     company_request = wrapper.api_request(
                 'companies',
-                f'fields *; where name = "{company}";'
+                f'fields developed, updated_at, name; where name = "{company}";'
             )
     company_json = company_request.decode('utf-8')
-    company_published_games_id = pd.read_json(company_json).loc[0, 'published']
 
+    company_df = pd.read_json(company_json)
+    company_published_games_id = company_df.loc[0, 'developed']
+    
     games_df = pd.DataFrame()
-    for id in company_published_games_id[0:5]:
+    for i in range(0, len(company_published_games_id), request_batch_size):
         column_request = wrapper.api_request(
                 'games',
-                f'fields name, genres, themes, aggregated_rating; where id = {id};'
+                f'fields name, genres, themes, total_rating; where id = \
+                {tuple(company_published_games_id[i : i + request_batch_size])};'
             )
         column_json = column_request.decode('utf-8')
         games_df = pd.concat([games_df, pd.read_json(column_json)], ignore_index = True)
+
+        
+    games_df['company'] = company 
+    games_df['updated_at'] = company_df.loc[0,'updated_at']
+
+    return games_df
     
-    print(games_df)
 
 
 
-    
-company = "Ubisoft Entertainment"
-get_games(company)
+# Electronic Arts, Epic Games, Square Enix with sufficient data
+# Riot Games for fun 
+companies = ["Electronic Arts", "Riot Games", "Square Enix"]
+games_df = pd.DataFrame()
+
+for company in companies:
+    games_df = pd.concat([games_df, get_games_df(company)], ignore_index = True)
+    time.sleep(2)
+print(games_df)
+
+# Need to attach time of last update to each observation corresponding to company 
+# Need to also attach company to dataframe 

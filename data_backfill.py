@@ -25,7 +25,6 @@ def get_games_df(company):
     company_df = pd.read_json(company_json)
     company_published_games_id = company_df.loc[0, 'developed']
     
-    games_df = pd.DataFrame()
     try:
     
         column_request = wrapper.api_request(
@@ -34,7 +33,7 @@ def get_games_df(company):
                 {tuple(company_published_games_id)};'
             )
         column_json = column_request.decode('utf-8')
-        games_df = pd.concat([games_df, pd.read_json(column_json)], ignore_index = True)
+        games_df = pd.read_json(column_json)
 
             
         games_df['company'] = company 
@@ -56,8 +55,7 @@ games_df = pd.DataFrame()
 for company in companies:
     games_df = pd.concat([games_df, get_games_df(company)], ignore_index = True)
 
-print(games_df)
-
+print(type(games_df.loc[0,'genres'][0]))
 
 
 # Need to attach time of last update to each observation corresponding to company 

@@ -48,8 +48,8 @@ def transform_data(df):
     df['themes'] = df.apply(map_theme_data, axis = 1)
 
     # Encodes genre and theme
-    genres_encoded = df['genres'].explode().str.get_dummies().groupby(level = 0).sum()
-    themes_encoded = df['themes'].explode().str.get_dummies().groupby(level = 0).sum()
+    genres_encoded = pd.get_dummies(df['genres'].explode()).groupby(level = 0).sum()
+    themes_encoded = pd.get_dummies(df['themes'].explode()).groupby(level = 0).sum()
     df = pd.concat([df, genres_encoded,themes_encoded], axis = 1)
 
     print(df)

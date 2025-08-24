@@ -19,21 +19,26 @@ df.to_csv("mapping/genre_mapping.csv", index = False)
 
 
 games_uncleaned = pd.read_csv("games_uncleaned.csv")
-genre_mapping = pd.read_csv("mapping/genre_mapping.csv")
-theme_mapping = pd.read_csv("mapping/theme_mapping.csv")
 
 def transform_data(df):
+    genre_mapping = pd.read_csv("mapping/genre_mapping.csv")
+    theme_mapping = pd.read_csv("mapping/theme_mapping.csv")
+
     # Clean missing values
     df.dropna(subset = "total_rating", inplace = True)
 
     # Maps genre and theme 
     def map_genre_data(row):
+        if pd.isnull(row['genres']):
+            return None
         mapped_genre = []
         for genre_id in literal_eval(row['genres']):
            mapped_genre.append(genre_mapping[genre_mapping['id'] == genre_id].iloc[0, 1])
         return mapped_genre
     
     def map_theme_data(row):
+        if pd.isnull(row['themes']):
+            return None
         mapped_theme = []
         for theme_id in literal_eval(row['themes']):
            mapped_theme.append(theme_mapping[theme_mapping['id'] == theme_id].iloc[0, 1])
@@ -41,7 +46,12 @@ def transform_data(df):
     
     df['genres'] = df.apply(map_genre_data, axis = 1)
     df['themes'] = df.apply(map_theme_data, axis = 1)
-    print(df)
-    
 
-transform_data(games_uncleaned.head())
+    # Encodes genre and theme
+    genres_encoded = df['genres'].explode().str.get_dummies().groupby(level = 0).sum()
+    themes_encoded = df['themes'].explode().str.get_dummies().groupby(level = 0).sum()
+    df = pd.concat([df, genres_encoded,themes_encoded], axis = 1)
+
+    print(df)
+
+transform_data(games_uncleaned.head(50))

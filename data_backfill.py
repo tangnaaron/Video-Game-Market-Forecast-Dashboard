@@ -3,6 +3,7 @@ import pandas as pd
 import warnings
 import time
 from requests.exceptions import HTTPError
+from data_cleaning import transform_data
 
 # Disables FutureWarning
 warnings.simplefilter(action = 'ignore', category = FutureWarning)

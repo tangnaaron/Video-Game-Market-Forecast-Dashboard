@@ -17,9 +17,6 @@ df = pd.read_json(json)
 df.to_csv("mapping/genre_mapping.csv", index = False)
 '''
 
-
-games_uncleaned = pd.read_csv("games_uncleaned.csv")
-
 def transform_data(df):
     genre_mapping = pd.read_csv("mapping/genre_mapping.csv")
     theme_mapping = pd.read_csv("mapping/theme_mapping.csv")
@@ -29,18 +26,19 @@ def transform_data(df):
 
     # Maps genre and theme 
     def map_genre_data(row):
-        if pd.isnull(row['genres']):
+        if (type(row['genres']) is float) or (len(row['genres']) == 0):
             return None
         mapped_genre = []
-        for genre_id in literal_eval(row['genres']):
+        for genre_id in row['genres']:
            mapped_genre.append(genre_mapping[genre_mapping['id'] == genre_id].iloc[0, 1])
+        
         return mapped_genre
     
     def map_theme_data(row):
-        if pd.isnull(row['themes']):
+        if (type(row['themes']) is float) or (len(row['themes']) == 0):
             return None
         mapped_theme = []
-        for theme_id in literal_eval(row['themes']):
+        for theme_id in row['themes']:
            mapped_theme.append(theme_mapping[theme_mapping['id'] == theme_id].iloc[0, 1])
         return mapped_theme
     
@@ -52,6 +50,5 @@ def transform_data(df):
     themes_encoded = pd.get_dummies(df['themes'].explode()).groupby(level = 0).sum()
     df = pd.concat([df, genres_encoded,themes_encoded], axis = 1)
 
-    print(df)
+    return df
 
-transform_data(games_uncleaned.head(50))

@@ -46,18 +46,17 @@ def get_games_df(company):
         print("Too many requests for " + company)
         return 
     
-
-# Electronic Arts, Epic Games, Square Enix with sufficient data
-# Riot Games for fun 
 companies = ["Electronic Arts", "Riot Games", "Square Enix", "Epic Games"]
 games_df = pd.DataFrame()
 
 # Aggregates company game dataset
 for company in companies:
-    games_df = pd.concat([games_df, get_games_df(company)], ignore_index = True)
+    games_df = pd.concat([games_df, get_games_df(company)])
 
-print(type(games_df.loc[0,'genres'][0]))
+# Cleans company game dataset
+games_df.set_index('id', inplace = True)
+games_df = transform_data(games_df)
 
+# Exports 
+games_df.to_csv("csv/games_cleaned.csv", index = False)
 
-# Need to attach time of last update to each observation corresponding to company 
-# Need to also attach company to dataframe 

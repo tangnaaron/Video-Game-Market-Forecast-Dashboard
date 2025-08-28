@@ -46,7 +46,7 @@ def get_games_df(company):
         print("Too many requests for " + company)
         return 
     
-companies = ["Electronic Arts", "Riot Games", "Square Enix", "Epic Games"]
+companies = ["Electronic Arts", "Riot Games", "Square Enix", "Epic Games", "Nintendo"]
 games_df = pd.DataFrame()
 
 # Aggregates company game dataset

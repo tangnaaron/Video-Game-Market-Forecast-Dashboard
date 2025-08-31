@@ -75,13 +75,9 @@ def model_predict(genres_list, themes_list, company, model):
     df = pd.DataFrame({"genres" : [genres_list], "themes" : [themes_list], "company" : company})
     df = feature_engineer(df, init = False)
 
+    # Predicting 
     X_pred = df[['genres_encoded','themes_encoded','companies_encoded','cluster']]
-    print(model.predict(X_pred))
+    prediction = float(model.predict(X_pred))
+    
+    return prediction
 
-#model_predict(['Shooter'], ['Drama'],"Electronic Arts")
-'''
-sample_df = pd.DataFrame({"genres" : [['Shooter']], "themes" : [['Drama']], "company" : "Electronic Arts"})
-sample_df = feature_engineer(sample_df, init = False)
-print(sample_df)
-print(games_cleaned)
-'''

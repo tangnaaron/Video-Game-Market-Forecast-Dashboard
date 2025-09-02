@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-pip --no-cache-dir install igdb
+pip --no-cache-dir install igdb-api-v4
 pip --no-cache-dir install pandas 
 
 python backend/data_refresh.py

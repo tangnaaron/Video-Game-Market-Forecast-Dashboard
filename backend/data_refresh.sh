@@ -11,7 +11,7 @@ git config --global --add safe.directory $p
 if [[ "$(git status --porcelain)" != "" ]]; then 
     git config --global user.name $USER_NAME
     git config --global user.email $USER_EMAIL
-    git add csv/games_cleaned1.csv
+    git add .
     git commit -m "Updating data"
     git push origin main
     echo "Executed and commited"

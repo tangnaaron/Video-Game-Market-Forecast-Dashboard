@@ -53,5 +53,5 @@ def data_backfill(company_list, client_id, token):
     games_df = transform_data(games_df)
 
     # Exports 
-    games_df.to_csv("csv/games_cleaned1.csv", index = False)
+    games_df.to_csv("csv/games_cleaned.csv", index = False)
 

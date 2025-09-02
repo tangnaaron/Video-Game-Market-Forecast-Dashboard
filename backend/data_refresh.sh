@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-pip --no-cache-dir install igdb-api-v4
-pip --no-cache-dir install pandas 
+pip --no-cache-dir --root-user-action=ignore install igdb-api-v4
+pip --no-cache-dir --root-user-action=ignore install pandas 
 
 python backend/data_refresh.py
 echo "Running"

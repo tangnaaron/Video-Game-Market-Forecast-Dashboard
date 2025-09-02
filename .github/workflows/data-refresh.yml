@@ -2,7 +2,7 @@ name: Data Refresh
 
 on:
     schedule:
-        - cron: "*/30 * * * *"
+        - cron: "0 */12 * * *"
 jobs:
     refresh-data:
         runs-on: ubuntu-latest

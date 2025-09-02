@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
-python data_refresh.py
+python backend/data_refresh.py
 echo "Running"
+
+p=$(pwd)
+git config --global --add safe.directory $p
 
 if [["$(git status --porcelain)" != ""]]; then 
     git config --global user.name $USER_NAME

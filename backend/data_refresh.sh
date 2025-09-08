@@ -2,7 +2,6 @@
 pip --no-cache-dir install --root-user-action=ignore igdb-api-v4
 pip --no-cache-dir install --root-user-action=ignore pandas 
 
-export $CLIENT_SECRET
 python backend/data_refresh.py
 echo "Running"
 

@@ -11,9 +11,9 @@ warnings.simplefilter(action = 'ignore', category = FutureWarning)
 # API variables 
 #response = post('https://id.twitch.tv/oauth2/token?client_id=w7r7cmzkm0etx41ula5aq00oatzc4c&client_secret=u7jjy34lwqjddnms6ini0il27gfg13&grant_type=client_credentials')
 client_secret = os.environ.get('CLIENT_SECRET')
+print(client_secret)
 response = post(f"https://id.twitch.tv/oauth2/token?client_id=w7r7cmzkm0etx41ula5aq00oatzc4c&client_secret={client_secret}&grant_type=client_credentials")
 client_id = 'w7r7cmzkm0etx41ula5aq00oatzc4c'
-print(client_secret)
 token = response.json()['access_token']
 companies = ["Electronic Arts", "Riot Games", "Square Enix", "Epic Games", "Nintendo"]
 

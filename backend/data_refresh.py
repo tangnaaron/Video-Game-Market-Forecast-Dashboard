@@ -3,7 +3,7 @@ import pandas as pd
 import warnings
 from data_backfill import data_backfill
 from requests import post
-import
+import os
 
 # Disables FutureWarning
 warnings.simplefilter(action = 'ignore', category = FutureWarning)

@@ -5,7 +5,7 @@ on:
         - cron: "0 */12 * * *"
 jobs:
     refresh-data:
-        environment: production
+        environment: myenvironment
         runs-on: ubuntu-latest
         container:
             image: python:3.12

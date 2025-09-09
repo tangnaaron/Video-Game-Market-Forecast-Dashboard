@@ -14,8 +14,8 @@ jobs:
               with:
                 ref: "main"
             - name: data refresh
-              run: bash ./backend/data_refresh.sh
               env:
                 USER_EMAIL: ${{ secrets.USER_EMAIL }}
                 USER_NAME: ${{ secrets.USER_NAME }}
                 CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+              run: bash ./backend/data_refresh.sh

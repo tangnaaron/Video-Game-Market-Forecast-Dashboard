@@ -66,7 +66,7 @@ genres,name,themes,total_rating,company,updated_at,Adventure,Arcade,Card & Board
 "['Role-playing (RPG)', 'Adventure']",Kingdom Hearts HD 2.5 Remix,"['Action', 'Fantasy']",85.73189759111301,Square Enix,2025-11-19 20:03:08,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "['Point-and-click', 'Puzzle', 'Adventure']",Season of Mystery: The Cherry Blossom Murders,['Mystery'],60.0,Square Enix,2025-11-19 20:03:08,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
 "['Puzzle', 'Role-playing (RPG)']",Gyromancer,,78.33464952676255,Square Enix,2025-11-19 20:03:08,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-['Role-playing (RPG)'],Final Fantasy X/X-2 HD Remaster,['Fantasy'],85.62455087805793,Square Enix,2025-11-19 20:03:08,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+['Role-playing (RPG)'],Final Fantasy X/X-2 HD Remaster,['Fantasy'],85.62549025815812,Square Enix,2025-11-19 20:03:08,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "['Role-playing (RPG)', 'Adventure']",Kingdom Hearts HD 2.8 Final Chapter Prologue,"['Action', 'Fantasy']",74.75183135945022,Square Enix,2025-11-19 20:03:08,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ['Role-playing (RPG)'],Final Fantasy XIV: Heavensward,"['Action', 'Fantasy', 'Drama']",87.52540943142706,Square Enix,2025-11-19 20:03:08,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "['Simulator', 'Sport']",Championship Manager 2008,,65.11175005903226,Square Enix,2025-11-19 20:03:08,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -121,7 +121,7 @@ genres,name,themes,total_rating,company,updated_at,Adventure,Arcade,Card & Board
 "['Role-playing (RPG)', 'Tactical']",Romancing SaGa 2: Revenge of the Seven,['Fantasy'],84.5,Square Enix,2025-11-19 20:03:08,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ['Role-playing (RPG)'],Bravely Default: Flying Fairy - HD Remaster,['Fantasy'],87.33333333333333,Square Enix,2025-11-19 20:03:08,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ['Shooter'],Unreal Tournament,['Action'],92.06172227246557,Epic Games,2025-11-03 09:47:41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-"['Shooter', 'Platform']",Unreal,"['Action', 'Science fiction']",80.43276890739159,Epic Games,2025-11-03 09:47:41,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"['Shooter', 'Platform']",Unreal,"['Action', 'Science fiction']",80.43118000631941,Epic Games,2025-11-03 09:47:41,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 ['Shooter'],Gears of War 3,"['Action', 'Science fiction', 'Horror']",89.414959211132,Epic Games,2025-11-03 09:47:41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0
 ['Shooter'],Bulletstorm,"['Action', 'Science fiction', 'Comedy']",82.73748566827913,Epic Games,2025-11-03 09:47:41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 ['Shooter'],Gears of War,"['Action', 'Science fiction', 'Horror']",82.51936214032828,Epic Games,2025-11-03 09:47:41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0

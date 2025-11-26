@@ -45,8 +45,8 @@ genres,name,themes,total_rating,company,updated_at,Adventure,Arcade,Card & Board
 ['Adventure'],Harry Potter and the Chamber of Secrets,"['Action', 'Fantasy']",74.54071293341377,Electronic Arts,2025-11-10 21:04:30,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ['Adventure'],Harry Potter and the Goblet of Fire,"['Action', 'Fantasy']",0.0,Electronic Arts,2025-11-10 21:04:30,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ['Sport'],FC Mobile,['Non-fiction'],74.97645211930927,Electronic Arts,2025-11-10 21:04:30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
-"['Role-playing (RPG)', 'Strategy', 'MOBA']",League of Legends,"['Action', 'Fantasy']",79.50517694196078,Riot Games,2025-11-21 07:59:21,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-"['Strategy', 'Turn-based strategy (TBS)', 'Tactical', 'Card & Board Game']",Teamfight Tactics,['Fantasy'],81.24010600170246,Riot Games,2025-11-21 07:59:21,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"['Role-playing (RPG)', 'Strategy', 'MOBA']",League of Legends,"['Action', 'Fantasy']",79.50439149004083,Riot Games,2025-11-21 07:59:21,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"['Strategy', 'Turn-based strategy (TBS)', 'Tactical', 'Card & Board Game']",Teamfight Tactics,['Fantasy'],81.23547800177845,Riot Games,2025-11-21 07:59:21,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "['Strategy', 'MOBA']",League of Legends: Wild Rift,"['Action', 'Fantasy']",70.58559591351809,Riot Games,2025-11-21 07:59:21,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "['Strategy', 'Turn-based strategy (TBS)', 'Card & Board Game']",Legends of Runeterra,['Fantasy'],79.1119421961596,Riot Games,2025-11-21 07:59:21,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "['Shooter', 'Tactical']",Valorant,"['Action', 'Fantasy', 'Science fiction']",75.03638192198508,Riot Games,2025-11-21 07:59:21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0
@@ -193,7 +193,7 @@ genres,name,themes,total_rating,company,updated_at,Adventure,Arcade,Card & Board
 "['Shooter', 'Platform', 'Puzzle', 'Racing', 'Adventure', 'Arcade']",Nintendo Land,"['Action', 'Fantasy', 'Science fiction', 'Party']",75.14331838698205,Nintendo,2025-11-24 17:37:25,1,1,0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0
 ['Platform'],Super Mario 3D World,['Action'],89.21281110147108,Nintendo,2025-11-24 17:37:25,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "['Puzzle', 'Strategy', 'Turn-based strategy (TBS)', 'Adventure', 'Card & Board Game']",Mario Party DS,['Party'],66.02174612994341,Nintendo,2025-11-24 17:37:25,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
-"['Racing', 'Arcade']",Mario Kart: Super Circuit,"['Action', 'Kids']",82.87386984003314,Nintendo,2025-11-24 17:37:25,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"['Racing', 'Arcade']",Mario Kart: Super Circuit,"['Action', 'Kids']",82.87303389640343,Nintendo,2025-11-24 17:37:25,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
 "['Racing', 'Arcade']",Mario Kart 7,['Party'],82.47726293071105,Nintendo,2025-11-24 17:37:25,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
 ['Simulator'],Nintendogs + Cats: Toy Poodle & New Friends,,63.11107251853311,Nintendo,2025-11-24 17:37:25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "['Platform', 'Adventure']",Yoshi's Story,"['Action', 'Kids']",72.82003253490657,Nintendo,2025-11-24 17:37:25,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
@@ -299,7 +299,7 @@ genres,name,themes,total_rating,company,updated_at,Adventure,Arcade,Card & Board
 ['Simulator'],Nintendogs + Cats: French Bulldog & New Friends,"['Sandbox', 'Kids']",67.20808306283737,Nintendo,2025-11-24 17:37:25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
 ['Sport'],Golf,['Non-fiction'],78.70111810345756,Nintendo,2025-11-24 17:37:25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
 ['Pinball'],Pinball,['Action'],67.38382397422025,Nintendo,2025-11-24 17:37:25,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-['Puzzle'],Tetris,,83.9765429198182,Nintendo,2025-11-24 17:37:25,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+['Puzzle'],Tetris,,83.97637934025403,Nintendo,2025-11-24 17:37:25,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ['Strategy'],Dillon's Dead-Heat Breakers,['Action'],74.0,Nintendo,2025-11-24 17:37:25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ['Card & Board Game'],Super Mario Party,"['Comedy', 'Kids', 'Party']",70.1036260121939,Nintendo,2025-11-24 17:37:25,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
 "['Platform', 'Arcade']",Arcade Archives: Donkey Kong,['Action'],83.0,Nintendo,2025-11-24 17:37:25,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
